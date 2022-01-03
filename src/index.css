@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+#backgroundimg{
+    width: 100vw;
+    height: 100vh;
+    filter: blur(3px) opacity(90%);
+    background-image: url('./img/virus_microscope-wallpaper-1920x1080.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    transform: scale(1.02);
+}
+hr{
+    margin: 0;
+    width: 100%;
+    border: 0;
+    height : 1px;
+    background-color : #bbb;
+    background : -webkit-linear-gradient(left, #eee, #777, #eee);
+    background : -moz-linear-gradient(left, #eee, #777, #eee);
+    background : -ms-linear-gradient(left, #eee, #777, #eee);
+    background : -o-linear-gradient(left, #eee, #777, #eee);
+}
+
+#box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 550px;
+    height: 350px;
+    padding: 10px;
+
+    border: 4px outset;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+    background-color: white;
+}
+
+#setBox {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.setSubBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-bottom: 5px;
+}
+
+#worldSetting {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    width: 350px;
+    /* height: 50px; */
+    line-height: 50px;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+
+    border-radius: 10px;
+    /* border: 5px outset; */
+
+    background-color: white;
+
+    z-index: 101;
+}
+
+.setinput {
+    position: relative;
+    height: 40px;
+    padding-left: 10px;
+
+    font-size: 22px;
+    box-sizing: border-box;
+
+    border-style: solid;
+    border-radius: 3px;
+}
+
+
+#set_numOfPeo {
+    position: absolute;
+    top: 65px;
+    
+    padding: 5px;
+    box-sizing: border-box;
+    width: 308px;
+    
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: rgb(118, 118, 118);
+    font-size: 22px;
+
+    z-index: 100;
+}
+
+#setComplete {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    
+    cursor: pointer;
+}
+
+.moveright{
+    margin: 5px;
+    width: 70%;
+}
+
+.settingContents{
+    display: flex;
+    width: 440px;
+    height: 50px;
+    margin: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.contentsName{
+    width: 90px;
+    text-align: center;
+}
+
+#set_hospitalSystem {
+    width: 230px;
+    height: 35px;
+    margin: auto;
+    margin-top: 15px;
+
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 35px;
+
+    border: 1px solid black;
+    border-radius: 3px;
+
+    background-color: rgb(180, 180, 180);
+
+    user-select: none;
+    cursor: pointer;
+}
+
+#mainMenu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 550px;
+    height: 450px;
+}

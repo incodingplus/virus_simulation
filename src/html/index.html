@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World_setting</title>
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=6d82dc1b5b2fdc74ebac396c0b6b4e5b"></script>
+</head>
+<body>
+    <div id="backgroundimg"></div>
+    <div id="mainMenu">
+        <div id="worldSetting">바이러스 시뮬레이션</div>
+        <div id="box">
+            <div id="setBox">
+                <div class="setSubBox">
+                    <div class="settingContents">
+                        <div class="contentsName">도시</div>
+                        <input class="setinput moveright" id="set_worldname" type="text" placeholder="도시명을 적어주세요" minlength="1" maxlength="12"
+                            value="meta-1" required>
+                    </div><hr>
+                    <div class="settingContents">
+                        <div class="contentsName">인구</div>
+                        <div>
+                            <select class="moveright" style="align-items: baseline;" name="NOP" id="set_numOfPeo" size="1" onfocus="this.size=5; this.innerHeight=100;" onblur="this.size=1;" onchange="this.size=1; this.blur();">
+                                <option value="100">100</option>
+                                <option value="100">200</option>
+                                <option value="100">300</option>
+                                <option value="100">400</option>
+                                <option value="100">500</option>
+                                <option value="100">600</option>
+                                <option value="100">700</option>
+                                <option value="100"selected>800</option>
+                                <option value="100">900</option>
+                                <option value="100">1000</option>
+                                <option value="100">1100</option>
+                                <option value="100">1200</option>
+                                <option value="100">1300</option>
+                                <option value="100">1400</option>
+                                <option value="100">1500</option>
+                            </select>
+                        </div>
+                    </div><hr>
+                    <div class="settingContents">
+                        <div class="contentsName">감염자</div>
+                        <input class="setinput moveright" id="set_infecPeo" type="number" min="0" max="800" placeholder="초기감염자 수를 정해주세요" value="0"
+                            required>
+                    </div><hr>
+                    <div id="set_hospitalSystem">
+                        병원 시스템 비활성화
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="setComplete">START</button>
+    </div>
+</body>
+</html>
