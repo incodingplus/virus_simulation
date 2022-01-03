@@ -78,6 +78,6 @@ function locationHref(){
     }
     setting.infecP = Number(set_infecPeo.value);
     
-    location.href = `/main.html?json=${JSON.stringify(setting)}`
+    location.href = `./main.html?json=${JSON.stringify(setting)}`
     // console.log(setting)
 }

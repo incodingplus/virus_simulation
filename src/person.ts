@@ -420,14 +420,14 @@ export class Person implements People {
                     const prey = lineData[lineId].linePath[i].getLat();
                     const nexx = lineData[lineId].linePath[i + n].getLng();
                     const nexy = lineData[lineId].linePath[i + n].getLat();
-                    const dist = ((nexx - prex) ** 2 + (nexy - prey) ** 2) ** 0.5 * speed;
+                    let dist = ((nexx - prex) ** 2 + (nexy - prey) ** 2) ** 0.5 * speed;
+                    if(dist === 0) dist = Number.EPSILON;
                     const X = (index * nexx + (dist - index) * prex) / dist;
                     const Y = (index * nexy + (dist - index) * prey) / dist;
                     const position = new kakao.maps.LatLng(Y, X);
                     this.position.x = position.getLng();
                     this.position.y = position.getLat();
                     circle.setPosition(position);
-                    // console.log('error')
                     index++;
                     if (this.die) {
                         return;
